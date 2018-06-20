@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<t:SlideMenuView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:t="clr-namespace:SlideOverKit"
+    x:Class="playground3.Views.RightSideMenu">
+    <Grid Padding="10, 30, 10, 10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Right Side Menu" FontSize="18" Grid.ColumnSpan="2" XAlign="Center" YAlign="Center" TextColor="Black" />
+        <Entry Placeholder="Search..."  Grid.ColumnSpan="2" Grid.Row="1" HeightRequest="40" VerticalOptions="Center" />
+        <Label Text="Super Crashing Picker" FontSize="18" Grid.ColumnSpan="2" Grid.Row="2" XAlign="Center" YAlign="Center" TextColor="Black" />
+        <Picker Grid.ColumnSpan="2" Grid.Row="3" HeightRequest="40" VerticalOptions="Center" SelectedIndex="0">
+            <Picker.Items>
+                <x:String>Item 1</x:String> 
+                <x:String>Item 2</x:String>
+                <x:String>Item 3</x:String>
+                <x:String>Item 4</x:String>
+                <x:String>Item 5</x:String>
+            </Picker.Items>
+        </Picker>
+        <Grid Grid.Column="0" Grid.Row="4" BackgroundColor="#E15771">
+            <Image Source="Home.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="4" BackgroundColor="#348ECA">
+            <Image Source="Happy.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="5" BackgroundColor="#348ECA">
+            <Image Source="Settings.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="5" BackgroundColor="#348ECA">
+            <Image Source="VideoCall.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="6" BackgroundColor="#348ECA">
+            <Image Source="Microphone.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="6" BackgroundColor="#3AAA70">
+            <Image Source="Enter.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="7" BackgroundColor="#348ECA">
+            <Image Source="Pencil.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="7" BackgroundColor="#348ECA">
+            <Image Source="MessageFilled.png" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Image Grid.ColumnSpan="2"  Grid.Row="8" WidthRequest="10" HeightRequest="10" HorizontalOptions="Center" VerticalOptions="Center"  Source="DoubleDown_Black.png"/>
+    </Grid>
+</t:SlideMenuView>
